@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--Ryan Hamlet -->
+<!--VFW 1307 -->
+<!--VFW Project 3 -->
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="keywords" content="buy,sell,trade,bidding" />
+		<meta name="description" content="This is an application that allows you to buy, sell or trade items online in your local area."/>
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+		<title> Thrift Shop </title>
+        
+    <body>
+    	 <h1>Item Application</h1>../CSS/styles.css
+    	 	<form action="#" method="post" id="itemApp"> 
+            	<fieldset id="itemFieldset">
+                	<legend>Item Information</legend>
+                	<ul id= "errorMessages" ></ul>
+                		<ul>
+	                		<li><label for="Title">Title:</label><input type="text" id="title" /></li>
+	                		<li><label for="Price"> Price:</label><input type="text" id="price" /></li>
+	                		<li id="select"><label for="Category"> Category:</label>
+	                			<select id="searchCategory">
+	                            	<optgroup label="Categories">
+		                            	<option value="All">All</option>
+		                            	<option value="Auto">Auto</option>
+		                            	<option value="Electronics">Electronics</option>
+		                            	<option value="Clothes">Clothes</option>
+		                            	<option value="Jewelry">Jewelry</option>
+		                            	<option value="Furniture">Furniture</option>
+		                            	<option value="Pets">Pets</option>
+		                            	<option value="Household">Household</option>
+		                            	<option value="Collectables">Collectables</option>
+		                            	<option value="Books">Books</option>
+		                            </optgroup>
+		                        </select>
+		                      </li>
+		                      <li><label for="ItemCondition">Item Condition:</label>
+		                      	<ul>
+		                      		<input type="radio" name = "condition" value="New"  id="New"/><label for="New">New</label>
+		                      		<input type="radio" name = "condition" value="Used" id="Used"/><label for="Used">Used</label>
+		                      	</ul>	
+		                      </li>  
+		                      <li><label for="Scale">Condition Scale:</label><br /><input type="range" name="Scale" id="condition" min="1" max ="10" /></li> 
+		                      <li><label for="Description">Description:</label></li>
+                          				<textarea name="textarea" id="description"rows="10" cols="50">Write something here...</textarea></li>
+		                        <li><label for="SellDate">Sell by date:</label><input type="date" id="sellDate" /></li>
+		                      	<li><label for="RepostOption">Repost Option:</label><input type="checkbox" value="Yes" class= "checkbox" id="repostOption" /></li>
+		                      	
+		                      	<li><label for="Email">Seller Email:</label><input type="Email" id="email" placeholder="www.userEmail@email.com" /></li>
+		                      	<li><input type="hidden" value"true" /></li>               
+		                </ul>
+				
+		                    	<ul>
+			                    	<input type="button" id="submit" value="Submit" />
+			                    </ul>
+		          </fieldset>
+		          		<input type="Enter" value="Search" />
+		          
+		          		<ul> 
+			          		<a href="#" id= "show">Show Data</a>
+			          		<a href="#" id= "clear">Clear Data</a>
+			          		<a href="#" id= "newItem">New Item</a>
+			            </ul>
+			         </form>   
+			      <script src="../JS/main.js" type="text/javascript"></script>
+        </body>
+        
+</html>
